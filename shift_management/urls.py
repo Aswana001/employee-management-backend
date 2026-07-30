@@ -3,8 +3,8 @@ from . import views
 
 urlpatterns = [
     # Core Shift Setup Rules
-    path('shifts/', views.ShiftListCreateAPIView.as_view(), name='shift-list-create'),
-    path('shifts/<int:pk>/', views.ShiftRetrieveUpdateDestroyAPIView.as_view(), name='shift-detail'),
+    path('', views.ShiftListCreateAPIView.as_view(), name='shift-list-create'),
+    path('<int:pk>/', views.ShiftRetrieveUpdateDestroyAPIView.as_view(), name='shift-detail'),
     
     # Assignments Pipeline
     path('assignments/', views.AssignmentListCreateAPIView.as_view(), name='assign-list-create'),

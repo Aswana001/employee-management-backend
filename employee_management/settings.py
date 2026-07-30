@@ -18,6 +18,10 @@ INSTALLED_APPS = [
     'django_filters',
     'employee',
     'attendance',
+    'shift_management',
+    'leave_management',
+    'payroll_management',
+    'expense_management',
 ]
 
 MIDDLEWARE = [

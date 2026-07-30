@@ -7,6 +7,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('employee.urls')),
     path('api/v1/attendance/', include('attendance.urls')),
+    path('api/v1/shifts/', include('shift_management.urls')),   
+    path('api/v1/leaves/', include('leave_management.urls')),   
+    path('api/v1/payroll/', include('payroll_management.urls')),
+    path('api/v1/expenses/', include('expense_management.urls')),
 ]
 
 if settings.DEBUG:
