@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'leave_management',
     'payroll_management',
     'expense_management',
+    'performance_management',
 ]
 
 MIDDLEWARE = [
