@@ -24,7 +24,8 @@ INSTALLED_APPS = [
     'payroll_management',
     'expense_management',
     'performance_management',
-    'recruitment'
+    'recruitment',
+    'audit_notifications',
 ]
 
 MIDDLEWARE = [

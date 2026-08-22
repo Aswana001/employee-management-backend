@@ -12,6 +12,9 @@ urlpatterns = [
     path('api/v1/payroll/', include('payroll_management.urls')),
     path('api/v1/expenses/', include('expense_management.urls')),
     path('api/v1/performance/', include('performance_management.urls')),
+    path('api/v1/recruitment/', include('recruitment.urls')),
+    path('api/v1/audit/', include('audit_notifications.urls')),
+
 ]
 
 if settings.DEBUG:
