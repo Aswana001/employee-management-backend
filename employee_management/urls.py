@@ -14,7 +14,7 @@ urlpatterns = [
     path('api/v1/performance/', include('performance_management.urls')),
     path('api/v1/recruitment/', include('recruitment.urls')),
     path('api/v1/audit/', include('audit_notifications.urls')),
-
+    path('api/v1/analytics/', include('reports.urls')),
 ]
 
 if settings.DEBUG:
