@@ -2,8 +2,17 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+from django.urls import path, include
+
+def root_api_view(request):
+    return JsonResponse({
+        "status": "success",
+        "message": "Employee Management System Backend API is active."
+    })
 
 urlpatterns = [
+    path('', root_api_view, name='root-index'),
     path('admin/', admin.site.urls),
     path('api/v1/', include('employee.urls')),
     path('api/v1/attendance/', include('attendance.urls')),
