@@ -27,7 +27,7 @@ class Attendance(models.Model):
     is_late = models.BooleanField(default=False)
     overtime_hours = models.DecimalField(max_digits=4, decimal_places=2, default=0.00)
     is_valid_geofence = models.BooleanField(default=True)
-    location = models.CharField(max_length=255, blank=True, null=True)
+   
 
     class Meta:
         unique_together = ('employee', 'date')

@@ -54,7 +54,6 @@ class CheckInAPIView(APIView):
             date=today,
             defaults={
                 'check_in': now,
-                'location': request.data.get('location', ''),
                 'is_valid_geofence': request.data.get('is_valid_geofence', True)
             }
         )
