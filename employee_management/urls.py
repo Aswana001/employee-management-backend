@@ -11,8 +11,14 @@ def root_api_view(request):
         "message": "Employee Management System Backend API is active."
     })
 
+from django.http import JsonResponse
+from django.urls import path, include
+
+def home_view(request):
+    return JsonResponse({"message": "Employee Management API is running locally"})
+
 urlpatterns = [
-    path('', root_api_view, name='root-index'),
+    path('', home_view),  # Handles GET /
     path('admin/', admin.site.urls),
     path('api/v1/', include('employee.urls')),
     path('api/v1/attendance/', include('attendance.urls')),
